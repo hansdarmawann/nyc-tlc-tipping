@@ -1,0 +1,2117 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='NYC TLC Trip Record Cleaned' inline='true' name='federated.15urj0b1021dye11e9exi08237yu' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='NYC TLC Trip Record Cleaned' name='textscan.1ih5qv61q03n1w0zl628t17s5p1x'>
+            <connection class='textscan' directory='C:/Users/User/Documents/JCDS 2602/Capstone Project/jcds2602-capstone-2' filename='NYC TLC Trip Record Cleaned.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1ih5qv61q03n1w0zl628t17s5p1x' name='NYC TLC Trip Record Cleaned.csv' table='[NYC TLC Trip Record Cleaned#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_ID' separator=';'>
+            <column datatype='integer' name='vendor_id' ordinal='0' />
+            <column datatype='datetime' name='pickup_datetime' ordinal='1' />
+            <column datatype='datetime' name='dropoff_datetime' ordinal='2' />
+            <column datatype='integer' name='rate_code_id' ordinal='3' />
+            <column datatype='integer' name='pickup_location_id' ordinal='4' />
+            <column datatype='integer' name='dropoff_location_id' ordinal='5' />
+            <column datatype='real' name='passenger_count' ordinal='6' />
+            <column datatype='real' name='trip_distance' ordinal='7' />
+            <column datatype='real' name='fare_amount' ordinal='8' />
+            <column datatype='real' name='extra' ordinal='9' />
+            <column datatype='real' name='tip_amount' ordinal='10' />
+            <column datatype='real' name='tolls_amount' ordinal='11' />
+            <column datatype='real' name='total_amount' ordinal='12' />
+            <column datatype='integer' name='payment_type_id' ordinal='13' />
+            <column datatype='integer' name='trip_type_id' ordinal='14' />
+            <column datatype='real' name='congestion_surcharge' ordinal='15' />
+            <column datatype='integer' name='pickup_hour' ordinal='16' />
+            <column datatype='string' name='pickup_day_of_week' ordinal='17' />
+            <column datatype='real' name='trip_duration_minutes' ordinal='18' />
+            <column datatype='real' name='trip_duration_hours' ordinal='19' />
+            <column datatype='string' name='vendor_name' ordinal='20' />
+            <column datatype='string' name='rate_code_name' ordinal='21' />
+            <column datatype='string' name='payment_type_name' ordinal='22' />
+            <column datatype='string' name='trip_type_name' ordinal='23' />
+            <column datatype='string' name='pickup_borough' ordinal='24' />
+            <column datatype='string' name='pickup_zone' ordinal='25' />
+            <column datatype='string' name='pickup_service_zone' ordinal='26' />
+            <column datatype='string' name='dropoff_borough' ordinal='27' />
+            <column datatype='string' name='dropoff_zone' ordinal='28' />
+            <column datatype='string' name='dropoff_service_zone' ordinal='29' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[NYC TLC Trip Record Cleaned.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;IDR&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_ID&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>vendor_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[vendor_id]</local-name>
+            <parent-name>[NYC TLC Trip Record Cleaned.csv]</parent-name>
+            <remote-alias>vendor_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pickup_datetime</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[pickup_datetime]</local-name>
+            <parent-name>[NYC TLC Trip Record Cleaned.csv]</parent-name>
+            <remote-alias>pickup_datetime</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dropoff_datetime</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[dropoff_datetime]</local-name>
+            <parent-name>[NYC TLC Trip Record Cleaned.csv]</parent-name>
+            <remote-alias>dropoff_datetime</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rate_code_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[rate_code_id]</local-name>
+            <parent-name>[NYC TLC Trip Record Cleaned.csv]</parent-name>
+            <remote-alias>rate_code_id</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pickup_location_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[pickup_location_id]</local-name>
+            <parent-name>[NYC TLC Trip Record Cleaned.csv]</parent-name>
+            <remote-alias>pickup_location_id</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dropoff_location_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[dropoff_location_id]</local-name>
+            <parent-name>[NYC TLC Trip Record Cleaned.csv]</parent-name>
+            <remote-alias>dropoff_location_id</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>passenger_count</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[passenger_count]</local-name>
+            <parent-name>[NYC TLC Trip Record Cleaned.csv]</parent-name>
+            <remote-alias>passenger_count</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trip_distance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[trip_distance]</local-name>
+            <parent-name>[NYC TLC Trip Record Cleaned.csv]</parent-name>
+            <remote-alias>trip_distance</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fare_amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[fare_amount]</local-name>
+            <parent-name>[NYC TLC Trip Record Cleaned.csv]</parent-name>
+            <remote-alias>fare_amount</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>extra</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[extra]</local-name>
+            <parent-name>[NYC TLC Trip Record Cleaned.csv]</parent-name>
+            <remote-alias>extra</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tip_amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tip_amount]</local-name>
+            <parent-name>[NYC TLC Trip Record Cleaned.csv]</parent-name>
+            <remote-alias>tip_amount</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tolls_amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tolls_amount]</local-name>
+            <parent-name>[NYC TLC Trip Record Cleaned.csv]</parent-name>
+            <remote-alias>tolls_amount</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_amount]</local-name>
+            <parent-name>[NYC TLC Trip Record Cleaned.csv]</parent-name>
+            <remote-alias>total_amount</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>payment_type_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[payment_type_id]</local-name>
+            <parent-name>[NYC TLC Trip Record Cleaned.csv]</parent-name>
+            <remote-alias>payment_type_id</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trip_type_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[trip_type_id]</local-name>
+            <parent-name>[NYC TLC Trip Record Cleaned.csv]</parent-name>
+            <remote-alias>trip_type_id</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>congestion_surcharge</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[congestion_surcharge]</local-name>
+            <parent-name>[NYC TLC Trip Record Cleaned.csv]</parent-name>
+            <remote-alias>congestion_surcharge</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pickup_hour</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[pickup_hour]</local-name>
+            <parent-name>[NYC TLC Trip Record Cleaned.csv]</parent-name>
+            <remote-alias>pickup_hour</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pickup_day_of_week</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pickup_day_of_week]</local-name>
+            <parent-name>[NYC TLC Trip Record Cleaned.csv]</parent-name>
+            <remote-alias>pickup_day_of_week</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trip_duration_minutes</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[trip_duration_minutes]</local-name>
+            <parent-name>[NYC TLC Trip Record Cleaned.csv]</parent-name>
+            <remote-alias>trip_duration_minutes</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trip_duration_hours</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[trip_duration_hours]</local-name>
+            <parent-name>[NYC TLC Trip Record Cleaned.csv]</parent-name>
+            <remote-alias>trip_duration_hours</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>vendor_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[vendor_name]</local-name>
+            <parent-name>[NYC TLC Trip Record Cleaned.csv]</parent-name>
+            <remote-alias>vendor_name</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rate_code_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[rate_code_name]</local-name>
+            <parent-name>[NYC TLC Trip Record Cleaned.csv]</parent-name>
+            <remote-alias>rate_code_name</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>payment_type_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[payment_type_name]</local-name>
+            <parent-name>[NYC TLC Trip Record Cleaned.csv]</parent-name>
+            <remote-alias>payment_type_name</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trip_type_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[trip_type_name]</local-name>
+            <parent-name>[NYC TLC Trip Record Cleaned.csv]</parent-name>
+            <remote-alias>trip_type_name</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pickup_borough</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pickup_borough]</local-name>
+            <parent-name>[NYC TLC Trip Record Cleaned.csv]</parent-name>
+            <remote-alias>pickup_borough</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pickup_zone</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pickup_zone]</local-name>
+            <parent-name>[NYC TLC Trip Record Cleaned.csv]</parent-name>
+            <remote-alias>pickup_zone</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pickup_service_zone</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pickup_service_zone]</local-name>
+            <parent-name>[NYC TLC Trip Record Cleaned.csv]</parent-name>
+            <remote-alias>pickup_service_zone</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dropoff_borough</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[dropoff_borough]</local-name>
+            <parent-name>[NYC TLC Trip Record Cleaned.csv]</parent-name>
+            <remote-alias>dropoff_borough</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dropoff_zone</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[dropoff_zone]</local-name>
+            <parent-name>[NYC TLC Trip Record Cleaned.csv]</parent-name>
+            <remote-alias>dropoff_zone</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dropoff_service_zone</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[dropoff_service_zone]</local-name>
+            <parent-name>[NYC TLC Trip Record Cleaned.csv]</parent-name>
+            <remote-alias>dropoff_service_zone</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='NYC TLC Trip Record Cleaned.csv' datatype='table' name='[__tableau_internal_object_id__].[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]' role='measure' type='quantitative' />
+      <column caption='Congestion Surcharge' datatype='real' name='[congestion_surcharge]' role='measure' type='quantitative' />
+      <column caption='Dropoff Borough' datatype='string' name='[dropoff_borough]' role='dimension' type='nominal' />
+      <column caption='Dropoff Datetime' datatype='datetime' name='[dropoff_datetime]' role='dimension' type='ordinal' />
+      <column caption='Dropoff Location Id' datatype='integer' name='[dropoff_location_id]' role='dimension' type='ordinal' />
+      <column caption='Dropoff Service Zone' datatype='string' name='[dropoff_service_zone]' role='dimension' type='nominal' />
+      <column caption='Dropoff Zone' datatype='string' name='[dropoff_zone]' role='dimension' type='nominal' />
+      <column caption='Extra' datatype='real' name='[extra]' role='measure' type='quantitative' />
+      <column caption='Fare Amount' datatype='real' name='[fare_amount]' role='measure' type='quantitative' />
+      <column caption='Passenger Count' datatype='real' name='[passenger_count]' role='measure' type='quantitative' />
+      <column caption='Payment Type Id' datatype='integer' name='[payment_type_id]' role='dimension' type='ordinal' />
+      <column caption='Payment Type Name' datatype='string' name='[payment_type_name]' role='dimension' type='nominal' />
+      <column caption='Pickup Borough' datatype='string' name='[pickup_borough]' role='dimension' type='nominal' />
+      <column caption='Pickup Datetime' datatype='datetime' name='[pickup_datetime]' role='dimension' type='ordinal' />
+      <column caption='Pickup Day Of Week' datatype='string' name='[pickup_day_of_week]' role='dimension' type='nominal' />
+      <column caption='Pickup Hour' datatype='integer' name='[pickup_hour]' role='measure' type='quantitative' />
+      <column caption='Pickup Location Id' datatype='integer' name='[pickup_location_id]' role='dimension' type='ordinal' />
+      <column caption='Pickup Service Zone' datatype='string' name='[pickup_service_zone]' role='dimension' type='nominal' />
+      <column caption='Pickup Zone' datatype='string' name='[pickup_zone]' role='dimension' type='nominal' />
+      <column caption='Rate Code Id' datatype='integer' name='[rate_code_id]' role='dimension' type='ordinal' />
+      <column caption='Rate Code Name' datatype='string' name='[rate_code_name]' role='dimension' type='nominal' />
+      <column caption='Tip Amount' datatype='real' name='[tip_amount]' role='measure' type='quantitative' />
+      <column caption='Tolls Amount' datatype='real' name='[tolls_amount]' role='measure' type='quantitative' />
+      <column caption='Total Amount' datatype='real' name='[total_amount]' role='measure' type='quantitative' />
+      <column caption='Trip Distance' datatype='real' name='[trip_distance]' role='measure' type='quantitative' />
+      <column caption='Trip Duration Hours' datatype='real' name='[trip_duration_hours]' role='measure' type='quantitative' />
+      <column caption='Trip Duration Minutes' datatype='real' name='[trip_duration_minutes]' role='measure' type='quantitative' />
+      <column caption='Trip Type Id' datatype='integer' name='[trip_type_id]' role='dimension' type='ordinal' />
+      <column caption='Trip Type Name' datatype='string' name='[trip_type_name]' role='dimension' type='nominal' />
+      <column caption='Vendor Id' datatype='integer' name='[vendor_id]' role='dimension' type='ordinal' />
+      <column caption='Vendor Name' datatype='string' name='[vendor_name]' role='dimension' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/User/AppData/Local/Temp/TableauTemp/#TableauTemp_0lv9jot1a0cd9v16gl8cu1uxqx93.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/06/2025 09:11:32 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>vendor_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[vendor_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>vendor_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>NYC TLC Trip Record Cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pickup_datetime</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[pickup_datetime]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pickup_datetime</remote-alias>
+              <ordinal>1</ordinal>
+              <family>NYC TLC Trip Record Cleaned.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>42408</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>dropoff_datetime</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[dropoff_datetime]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>dropoff_datetime</remote-alias>
+              <ordinal>2</ordinal>
+              <family>NYC TLC Trip Record Cleaned.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>42408</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rate_code_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[rate_code_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rate_code_id</remote-alias>
+              <ordinal>3</ordinal>
+              <family>NYC TLC Trip Record Cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pickup_location_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[pickup_location_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pickup_location_id</remote-alias>
+              <ordinal>4</ordinal>
+              <family>NYC TLC Trip Record Cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>145</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>dropoff_location_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[dropoff_location_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>dropoff_location_id</remote-alias>
+              <ordinal>5</ordinal>
+              <family>NYC TLC Trip Record Cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>336</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>passenger_count</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[passenger_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>passenger_count</remote-alias>
+              <ordinal>6</ordinal>
+              <family>NYC TLC Trip Record Cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>trip_distance</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[trip_distance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>trip_distance</remote-alias>
+              <ordinal>7</ordinal>
+              <family>NYC TLC Trip Record Cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1214</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fare_amount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[fare_amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>fare_amount</remote-alias>
+              <ordinal>8</ordinal>
+              <family>NYC TLC Trip Record Cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>61</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>extra</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[extra]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>extra</remote-alias>
+              <ordinal>9</ordinal>
+              <family>NYC TLC Trip Record Cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tip_amount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[tip_amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tip_amount</remote-alias>
+              <ordinal>10</ordinal>
+              <family>NYC TLC Trip Record Cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>856</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tolls_amount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[tolls_amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tolls_amount</remote-alias>
+              <ordinal>11</ordinal>
+              <family>NYC TLC Trip Record Cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_amount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[total_amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_amount</remote-alias>
+              <ordinal>12</ordinal>
+              <family>NYC TLC Trip Record Cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1559</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>payment_type_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[payment_type_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>payment_type_id</remote-alias>
+              <ordinal>13</ordinal>
+              <family>NYC TLC Trip Record Cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>trip_type_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[trip_type_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>trip_type_id</remote-alias>
+              <ordinal>14</ordinal>
+              <family>NYC TLC Trip Record Cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>congestion_surcharge</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[congestion_surcharge]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>congestion_surcharge</remote-alias>
+              <ordinal>15</ordinal>
+              <family>NYC TLC Trip Record Cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pickup_hour</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[pickup_hour]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pickup_hour</remote-alias>
+              <ordinal>16</ordinal>
+              <family>NYC TLC Trip Record Cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pickup_day_of_week</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[pickup_day_of_week]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pickup_day_of_week</remote-alias>
+              <ordinal>17</ordinal>
+              <family>NYC TLC Trip Record Cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>trip_duration_minutes</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[trip_duration_minutes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>trip_duration_minutes</remote-alias>
+              <ordinal>18</ordinal>
+              <family>NYC TLC Trip Record Cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3261</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>trip_duration_hours</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[trip_duration_hours]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>trip_duration_hours</remote-alias>
+              <ordinal>19</ordinal>
+              <family>NYC TLC Trip Record Cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>44</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>vendor_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[vendor_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>vendor_name</remote-alias>
+              <ordinal>20</ordinal>
+              <family>NYC TLC Trip Record Cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rate_code_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[rate_code_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rate_code_name</remote-alias>
+              <ordinal>21</ordinal>
+              <family>NYC TLC Trip Record Cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>payment_type_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[payment_type_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>payment_type_name</remote-alias>
+              <ordinal>22</ordinal>
+              <family>NYC TLC Trip Record Cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>trip_type_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[trip_type_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>trip_type_name</remote-alias>
+              <ordinal>23</ordinal>
+              <family>NYC TLC Trip Record Cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pickup_borough</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[pickup_borough]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pickup_borough</remote-alias>
+              <ordinal>24</ordinal>
+              <family>NYC TLC Trip Record Cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pickup_zone</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[pickup_zone]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pickup_zone</remote-alias>
+              <ordinal>25</ordinal>
+              <family>NYC TLC Trip Record Cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>145</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pickup_service_zone</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[pickup_service_zone]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pickup_service_zone</remote-alias>
+              <ordinal>26</ordinal>
+              <family>NYC TLC Trip Record Cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>dropoff_borough</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[dropoff_borough]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>dropoff_borough</remote-alias>
+              <ordinal>27</ordinal>
+              <family>NYC TLC Trip Record Cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>dropoff_zone</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[dropoff_zone]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>dropoff_zone</remote-alias>
+              <ordinal>28</ordinal>
+              <family>NYC TLC Trip Record Cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>336</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>dropoff_service_zone</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[dropoff_service_zone]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>dropoff_service_zone</remote-alias>
+              <ordinal>29</ordinal>
+              <family>NYC TLC Trip Record Cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Indonesia&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='NYC TLC Trip Record Cleaned.csv' id='NYC TLC Trip Record Cleaned.csv_54FD2807F1EF46B796763C4B98EF66BA'>
+            <properties context=''>
+              <relation connection='textscan.1ih5qv61q03n1w0zl628t17s5p1x' name='NYC TLC Trip Record Cleaned.csv' table='[NYC TLC Trip Record Cleaned#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_ID' separator=';'>
+                  <column datatype='integer' name='vendor_id' ordinal='0' />
+                  <column datatype='datetime' name='pickup_datetime' ordinal='1' />
+                  <column datatype='datetime' name='dropoff_datetime' ordinal='2' />
+                  <column datatype='integer' name='rate_code_id' ordinal='3' />
+                  <column datatype='integer' name='pickup_location_id' ordinal='4' />
+                  <column datatype='integer' name='dropoff_location_id' ordinal='5' />
+                  <column datatype='real' name='passenger_count' ordinal='6' />
+                  <column datatype='real' name='trip_distance' ordinal='7' />
+                  <column datatype='real' name='fare_amount' ordinal='8' />
+                  <column datatype='real' name='extra' ordinal='9' />
+                  <column datatype='real' name='tip_amount' ordinal='10' />
+                  <column datatype='real' name='tolls_amount' ordinal='11' />
+                  <column datatype='real' name='total_amount' ordinal='12' />
+                  <column datatype='integer' name='payment_type_id' ordinal='13' />
+                  <column datatype='integer' name='trip_type_id' ordinal='14' />
+                  <column datatype='real' name='congestion_surcharge' ordinal='15' />
+                  <column datatype='integer' name='pickup_hour' ordinal='16' />
+                  <column datatype='string' name='pickup_day_of_week' ordinal='17' />
+                  <column datatype='real' name='trip_duration_minutes' ordinal='18' />
+                  <column datatype='real' name='trip_duration_hours' ordinal='19' />
+                  <column datatype='string' name='vendor_name' ordinal='20' />
+                  <column datatype='string' name='rate_code_name' ordinal='21' />
+                  <column datatype='string' name='payment_type_name' ordinal='22' />
+                  <column datatype='string' name='trip_type_name' ordinal='23' />
+                  <column datatype='string' name='pickup_borough' ordinal='24' />
+                  <column datatype='string' name='pickup_zone' ordinal='25' />
+                  <column datatype='string' name='pickup_service_zone' ordinal='26' />
+                  <column datatype='string' name='dropoff_borough' ordinal='27' />
+                  <column datatype='string' name='dropoff_zone' ordinal='28' />
+                  <column datatype='string' name='dropoff_service_zone' ordinal='29' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Average Tip Amounts by Dropoff Service Zone'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='NYC TLC Trip Record Cleaned' name='federated.15urj0b1021dye11e9exi08237yu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15urj0b1021dye11e9exi08237yu'>
+            <column-instance column='[tip_amount]' derivation='Avg' name='[avg:tip_amount:qk]' pivot='key' type='quantitative' />
+            <column caption='Dropoff Service Zone' datatype='string' name='[dropoff_service_zone]' role='dimension' type='nominal' />
+            <column-instance column='[dropoff_service_zone]' derivation='None' name='[none:dropoff_service_zone:nk]' pivot='key' type='nominal' />
+            <column caption='Tip Amount' datatype='real' name='[tip_amount]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.15urj0b1021dye11e9exi08237yu].[avg:tip_amount:qk]</rows>
+        <cols>[federated.15urj0b1021dye11e9exi08237yu].[none:dropoff_service_zone:nk]</cols>
+      </table>
+      <simple-id uuid='{1523CB49-EA22-45DA-B4DE-32F6FAA49179}' />
+    </worksheet>
+    <worksheet name='Average Tip Amounts by Hour of the Day'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='NYC TLC Trip Record Cleaned' name='federated.15urj0b1021dye11e9exi08237yu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15urj0b1021dye11e9exi08237yu'>
+            <column-instance column='[tip_amount]' derivation='Avg' name='[avg:tip_amount:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[pickup_hour]' derivation='None' name='[none:pickup_hour:qk]' pivot='key' type='quantitative' />
+            <column caption='Pickup Hour' datatype='integer' name='[pickup_hour]' role='measure' type='quantitative' />
+            <column caption='Tip Amount' datatype='real' name='[tip_amount]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>[federated.15urj0b1021dye11e9exi08237yu].[avg:tip_amount:qk]</rows>
+        <cols>[federated.15urj0b1021dye11e9exi08237yu].[none:pickup_hour:qk]</cols>
+      </table>
+      <simple-id uuid='{66A70CA2-47DC-4FD3-A073-F374232C2989}' />
+    </worksheet>
+    <worksheet name='Average Tip Amounts by Pickup Service Zone'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='NYC TLC Trip Record Cleaned' name='federated.15urj0b1021dye11e9exi08237yu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15urj0b1021dye11e9exi08237yu'>
+            <column-instance column='[tip_amount]' derivation='Avg' name='[avg:tip_amount:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[pickup_service_zone]' derivation='None' name='[none:pickup_service_zone:nk]' pivot='key' type='nominal' />
+            <column caption='Pickup Service Zone' datatype='string' name='[pickup_service_zone]' role='dimension' type='nominal' />
+            <column caption='Tip Amount' datatype='real' name='[tip_amount]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.15urj0b1021dye11e9exi08237yu].[avg:tip_amount:qk]</rows>
+        <cols>[federated.15urj0b1021dye11e9exi08237yu].[none:pickup_service_zone:nk]</cols>
+      </table>
+      <simple-id uuid='{3FDFD332-52CF-40E7-A491-EB74A656F20E}' />
+    </worksheet>
+    <worksheet name='Median Tip Amounts by Day of the Week'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='NYC TLC Trip Record Cleaned' name='federated.15urj0b1021dye11e9exi08237yu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15urj0b1021dye11e9exi08237yu'>
+            <column-instance column='[tip_amount]' derivation='Median' name='[med:tip_amount:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[pickup_day_of_week]' derivation='None' name='[none:pickup_day_of_week:nk]' pivot='key' type='nominal' />
+            <column caption='Pickup Day Of Week' datatype='string' name='[pickup_day_of_week]' role='dimension' type='nominal' />
+            <column caption='Tip Amount' datatype='real' name='[tip_amount]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.15urj0b1021dye11e9exi08237yu].[med:tip_amount:qk]</rows>
+        <cols>[federated.15urj0b1021dye11e9exi08237yu].[none:pickup_day_of_week:nk]</cols>
+      </table>
+      <simple-id uuid='{D85D51DB-BB47-4EF5-B83B-6AEC6AAB3854}' />
+    </worksheet>
+    <worksheet name='Tip Amount Distribution by Payment Method'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='NYC TLC Trip Record Cleaned' name='federated.15urj0b1021dye11e9exi08237yu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15urj0b1021dye11e9exi08237yu'>
+            <column-instance column='[payment_type_name]' derivation='None' name='[none:payment_type_name:nk]' pivot='key' type='nominal' />
+            <column caption='Payment Type Name' datatype='string' name='[payment_type_name]' role='dimension' type='nominal' />
+            <column-instance column='[tip_amount]' derivation='Sum' name='[sum:tip_amount:qk]' pivot='key' type='quantitative' />
+            <column caption='Tip Amount' datatype='real' name='[tip_amount]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.15urj0b1021dye11e9exi08237yu].[none:payment_type_name:nk]</rows>
+        <cols>[federated.15urj0b1021dye11e9exi08237yu].[sum:tip_amount:qk]</cols>
+      </table>
+      <simple-id uuid='{1A5E1725-8368-4E9F-8E4A-C23BE6520FD9}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Tip Amount Distribution by Payment Method'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{2EEC5673-3C72-4F0B-BF9D-B3041143DDCC}' />
+    </window>
+    <window class='worksheet' name='Median Tip Amounts by Day of the Week'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{41DC43BC-AAB1-42A3-B834-86CBAFF11D3B}' />
+    </window>
+    <window class='worksheet' name='Average Tip Amounts by Hour of the Day'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.15urj0b1021dye11e9exi08237yu].[none:pickup_hour:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C75D2527-E508-4EDD-AE7D-03E96E284BA4}' />
+    </window>
+    <window class='worksheet' name='Average Tip Amounts by Pickup Service Zone'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{17A33204-448B-4E54-A6E8-A23264F08AE1}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Average Tip Amounts by Dropoff Service Zone'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.15urj0b1021dye11e9exi08237yu].[none:dropoff_service_zone:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2E9CAE79-9F2E-4B67-A061-DABFFC502A46}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='Average Tip Amounts by Dropoff Service Zone' width='384'>
+      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
+    </thumbnail>
+    <thumbnail height='384' name='Average Tip Amounts by Hour of the Day' width='384'>
+      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
+    </thumbnail>
+    <thumbnail height='384' name='Average Tip Amounts by Pickup Service Zone' width='384'>
+      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
+    </thumbnail>
+    <thumbnail height='384' name='Median Tip Amounts by Day of the Week' width='384'>
+      iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAgAElEQVR4nO3deXAc130n8G93zw0M7hsgARAAQQAkId6nRFkMZR2WZctxYscq21Hi7CaR
+      46SSOM6xidexk6wdn6ms7awrXq8Sx4ocW0pkSZTEW7wAEgR4gsRBgjiIkwAGg7n62j9AAaRI
+      CeDMdAPg+36qWMWZ7nn9m3l4/Z0+plsyTdMEEREJR57vAoiIaH4wAIiIBMUAICISFAOAiEhQ
+      DAAiIkExAIiIBMUAICISFAOAiEhQDAAiogUqPHEdfUNjlrXvsKxlIiK6hWno+NIfPIMhKRMu
+      2YHV9z+Cp598H37+z/+I6l1PY3Vp1i3zdzW9gRfaUvA/fvMDcS1PC0/gT37vN6GlFsHp9GLH
+      Y0/hsQfWQZElANwCICKykYnh/ii+8NW/x999+S9w4Y3ncbE/iGU1tchJ9wGmgYstR/Gv//Kv
+      aL7UM/MqXcX+136B0bCOPW+8ilBMhxoax+59hwBDw95XXkVz8xH8+Cc/Re/IxMzrTAPDIQ/+
+      5pvfxF994VkceeG7ONx6DXoshMN7XmUAEBHNB8XlgcflgGGYOPzmi+geCaOt4RV8+7nXUVFd
+      hcDo8NSMponjr/0YhztDSPfI+M8X/x2hqAZ1chQ//a/XAEPDSz/5f7g4EEFBShRf/tvvIKzd
+      fok3f1YRPvL4drx1uAmTo9cwGJS4C4iIyF5j+Mof/xGcuobyNTtRXZiOfQAAE4f2vI6nfv0v
+      sbkuBwDQeuAijr3yHNqKKvH9b38FsiTdsUVJ8uOh9z+EXOh49fX/htFgFN4Mz23zeVNSoKkq
+      3CkZCPSeYwAQEdkrA3/+tb9Hieudq18J/rQ0jAwPA8iZfnbTIx9DVv8R7G/pxCPrKgATeLdL
+      OOvhUYRibricd1i1mxoO7juMVbt+B4dfeg4TOWsZAEREC8Wjv/Lr+KsvfwMX9uehpHYztucB
+      kuLCZz73B/jjL3wZ1aVfx8qSTPzN3/wtClJMjEenXmeaY/jHv/tbjHVfwbrHnka2b2bVrgd7
+      8dW//mtEAteRU7kVj26qQo+zEz/54c8g8X4ARET2ME0TwUAAvrQ0KDftzgkFJ+D0pMDpkKFG
+      w5iYjMCXmgoHdER1CSkeF0KTE5BdPjigYWIyDF9KCqLRGNK8Dvz+b3wWn/uHryETCtL8qdO7
+      ikzTQGBsDLoJKA4X/P4UyJIE0zQQDAS4BUBEZBdJkuBPT7/teV+qf/r/TrcXWW7v24+mV9K+
+      1LQb/3Mg0zW1f9/tcgFaFAVFRUhPy0DGbcuTkZ6ZhXeSJBn+9AxuARARiWrRnQZqGMZ8l0BE
+      dE9gABARCWrRBQARESUHA4CISFAMACIiQTEAiIgExQAgIhIUA4CISFAMACIiQTEAiIgExQAg
+      IhKUrReDM00TI9eu4FJvEFs2rIJ0yzQDXe0XMDg6CYfLh5q6Gnidip3lEREJxdYtgNYT+3Hw
+      VCs62jtvu6FBsL8Nrf0a1m/YgIo8Jw4cO2NnaUREwrF1C6B81RascBt44fk3bpsmyQpMQ4dp
+      AoauQ1Gmvv2bpombL1iqaRp0XbetZiKie5WtAeDxeGCaoTtO82UvgSf0Gg4fi2JscAibH9oF
+      YOribzev8GVZng4HIiKK34K5IUzX2WNIr9qKtZW5MGJjePGVt/ChD+2Coii3rPA1TWMAEBEl
+      wbyfBTTQcxUTERX+jCwM9F6FZhgY7LkKT0bWLQeJiYgouey7I5ipo+38WYxORmEYBmRZRlXd
+      GoSHu5GaVwK/x4nA8DW0XemBP7sIlWXFUOTbI0DTNDgcc99wOd0xgL1Nl5P5Tu45LoeC3/nw
+      hvkug4hstuhuCXm3AfDq8XZ876UTFla0+HlcDjz/xV+e7zKIyGbzvguIiIjmBwOAiEhQDAAi
+      IkExAIiIBMUAICISFAOAiEhQDAAiIkExAIiIBMUAICISFAOAiEhQDAAiIkExAIiIBMUAICIS
+      FAOAiEhQDAAiIkExAIiIBMUAICISFAOAiEhQDAAiIkExAIiIBMUAICISFAOAiEhQDAAiIkEx
+      AIiIBMUAICISFAOAiEhQDAAiIkExAIiIBMUAICISFAOAiEhQDjsXpqtRXDjdiEsDOj782A5I
+      N080TVzruoj2nutwOiQsrVqNouwUO8sjIhKKrQFw7uRhBN1ZiAW6YAK3BIAaHsGJ1gF84JF3
+      BAMREVnC1gBYvfkhmGYIPRe7bps22t2JtNwCnG46ASUlCzVV5VBkCYZhwDCM6flisRhisdic
+      l6nexbziMhEKhea7CCKyma0B8F5CoUmMTziwZftajPe14rUDjXjsfRtvm8/lcsHhmHvZTpcr
+      mWXeoyT4fL75LoKIbLZgDgJn5xfA6/HC5ZCRu7QaRmAABgBZluFwOKb/ERFRcti3RjUNDF7r
+      w2Q0iMDEOLquXEFe4RL0XGxGVlkdcgoq4bu4D+cuOmEGB1FYtRqKbcUREYnH1q/ULo8XcLjw
+      wScfmVq4LGHJsuVweFyQZBlbd+zE6PXrkArykZGWamdpRETCsS8AJBkZWdm3P+/03zSLgqyc
+      XNtKIiIS2YI5BkBERPZiABARCYoBQEQkKAYAEZGgGABERIJiABARCYoBQEQkKAYAEZGgGABE
+      RIJiABARCYoBQEQkKAYAEZGgGABERILiHVbIFk2XrqHz2uh8l7GgraksQEVxlqXLaOu5jpaO
+      fkuXsdi5HQqe2FZt6TJOtPbhysCYpcuYCwYA2eLY+R7sbuiY7zIWNJ/baXkAtHYN4bndpy1d
+      xmLn97ksD4DDZ7uxt+mypcuYC+4CIiISFAOAiEhQDAAiIkExAIiIBMUAICISFAOAiEhQDAAi
+      IkExAIiIBMUAICISFAOAiEhQDAAiIkExAIiIBMUAICISFAOAiEhQtgaAaejoPH8SL795FOad
+      50Bw4DJ+8vNXEVENO0sjIhKOrfcDOH1sL4bgx8TwIEwA0jumm6aOhjOXkeZSYdw5IYiIKEls
+      DYDVW34JQBgvXH3jtmmmaaCt5ThKatahq+Xg9POGYcA0Z9JA1/VbHs9G1/WEahaFqqqWtm8Y
+      3KKbjaHrlveDzn6YlWlaPx7MBdIPtgaAJEl4t3X39Z5W9MWy8GBxOrpabn2NJM1sKyiKAodj
+      7mUrihJvuUJxOp2Wti/LPNw0G1lRLO8Hhf0wK0myfjxIC6QfFkYVAIIhFS49gIaGBlzt6cXp
+      cxeg6jMB8M4gICKixNi3BWDqaDt/FqOTQQQnx9HY0IDldWtwpeUw8ms2orS6HqU3Zo2FJlC/
+      sgZOfnknIrKMfQEgKaiqqwcAbNy4bfrpzK0P3jbr9gd32lUVEZGwFswuICIishcDgIhIUAwA
+      IiJBMQCIiATFACAiEhQDgIhIUAwAIiJBMQCIiATFACAiEhQDgIhIUAwAIiJBMQCIiATFACAi
+      EhQDgIhIUAwAIiJBMQCIiATFACAiEhQDgIhIUAwAIiJBMQCIiATFACAiEhQDgIhIUAwAIiJB
+      MQCIiATFACAiEhQDgIhIUAwAIiJBMQCIiATFACAiEhQDgIhIULYHgKFH0d3TD/MO02KhAM6d
+      bsGlyz0wzDvNQUREyWJrAPRcOoV/+fHzeP3A8dsCQJ0YwrGWNiytrEaqNoT9Da12lkZEJByH
+      nQtzpxfiVz9WhZf+Y8/thaRmY/vmXMgS4MjOxHjHtTu2YRgGdF2f8zJNw4i7XpHczWcaD9Pg
+      Ft1szLv8244Ht6znwLRhPCyQfrA1AHLzC2CaoTtOkyQZME30X7mIw00XsWPX+wEAmqbd0hmm
+      ad7Vh6czAOZE0zRL2zdM9sNsDMOwvh84HmZlwvrxYC6Q8WBrALwX0zRwofEArkx68fgTH4DH
+      qQAAHA4HHI6ZMjVNu+XxbO5mXpG53W5L21cUxdL27wWKw2F5PzjYD7OSJOvHgywvjH6Y97OA
+      1FgMumEiOtaDs/3Ao+/bPL3yJyIi69j39djU0Xb+LEYnQ/B4FZxoaEBV3Rr0nj+BnOVr4AlF
+      kJYio7GhAQCQml2I2ooltpVHRCQa+wJAUlBVV3/b05kbtk79J305Hilebls5RESim/ddQERE
+      ND8YAEREgmIAEBEJigFARCQoBgARkaAYAEREgkogAHT09fbh7Uu86FoUE5Ph5FRFRESWSyAA
+      Ivjed74P9cYlLYJD7fiH7z2fnKqIiMhycf0QbKDtJH708904d/Esvvn1r0IGMNzbgfL7P5Hk
+      8oiIyCpxBUBGUSU++lEfQuMqnvrIR+GUAcXhRkFhQbLrIyIii8QVAO6UdJSXp+HZz/4G+vqH
+      ELxxICBqSKgqLUxqgUREZI0ErgWk4xtf+lN4S1bC7ZAAAOWrtjEAiIgWiQQCQEJaYRU+9/nP
+      w3sjAIiIaPFIIAAMOCcH8U///CPkpDgBAIUVq/DQ5tVJKo2IiKyU0BbAxocexXhs5vaMKV5P
+      EkoiIiI7JBQAWTl5cGszAZDmT0lCSUREZIeEDgJfPHsKQ+GpAOi/fB45az+EFcuKk1QaERFZ
+      KYEAcOGpT/7W9KORKyfxr3t6klASERHZIYEAUPHy8/+G4fDUtSDG+zsQSLsvSWUREZHVEjoG
+      ULy0HGnq1C4geXkNVt63JkllERGR1RK4GJwDtStr0NdxDnv3HcBgIAafx5m8yoiIyFIJ3Q/g
+      e1//a6gZFXjyg49h8PRuPPfysWTVRUREFktgF1AEA0EPfuuJXfA6JJTlOvCdfzsJYEvSiiMi
+      IuskEABuLC9Q8J3v/xDrqgpxeM9u1D7yTPIqIyIiSyWwC0jC05/9c2xfUYDe/mE89vTv4qkd
+      q5JXGRERWSqhYwAXWxrQdnUAhq7h7Im3sOdIS7LqIiIiiyWwCyiKH/zgOTz5qd+CzzmVI+m5
+      uUkqi4iIrJbYMYCaFahftx6ZngSaISKieZHQ5aDVkU488/TH4ZSn7gew+n0fxV/89keTVBoR
+      EVkpgQDQMKJn4Ic/+hY8ytQzssItASKixSKBNbaMNKeO/W8dnt4FlFlQitXVZe/6CtM0MTbU
+      g0s9E9i4thbSrRMxfK0LHd2D8GXkoLaqHIrMO40REVklgbOADJRVVKH/chsuXLiACxcu4Oq1
+      4fd8xcWmg9hzrBmXWttgvmOaGhrB4VMdWLt+PXzhXrR0DMRfGhERzSqhy0F/5FNTl4PWYlEM
+      9F3B1RHtPV9RWrsR1WtNvPD8G7dNG77ajoLKOjgVGctqa/Gfb57H2qoCmOatUaFpGgzDmHOV
+      uvbeNdGUWCxmafuGPvc+E5Wu65b3g6brlrZ/LzBNG8bDXazDrBRXAJimCV2L4WrbOew/cBBH
+      jh6H6S/Gr3ziU+/5Oq/XC9MM3XHaZCiMlDwfAEByeQE1DGDqg9JuWonLsgxZnvuGi3QX84rs
+      bj7TeEgSd+fNRpIky/tBZj/MSoId48HS5ucsrgDoO3cIX/zWcygoq8K2rVvxkBZC/oOfxM5V
+      JXEXkp7mx+BEEEAazMgkJHcqAEBRFCiKMj2fpmlwOOZettUdea+4m880HhKP58xKlmXL+4Hj
+      YQ4kG8aDtDD6Ib4qTBOK04nUlFT4fD64XfF/WEPXejEZVZG5dDmG25oRUXWcaWpGVd2KuNsk
+      IqLZxbXmLlr5AL7zrY243Hoa+w/sxfGGk/C0TcD1iU/i/jVVd36RqaPt/FmMTkZQvCQXJxoa
+      UFW3BtFwCC7dRIrPj4d3bsa5liZkl92H0sLMRN4XERHNIq4AkCQJLrcX1fWbUF2/Cc9Ew+jt
+      6sDV0fB7vEhBVV39bU9nLpsJDE9qFtatz4qnJCIiuktJ2dHldHtRtnwlypLRGBER2SKhADBN
+      A8HAOKKqgRR/Grxu3hKSiGixSCgAXv/Jd/FvbzQh1etGzPTg9//sL1Bbwl04RESLQUKXg37j
+      rfP45v/+J2R6FFxueg0/euE1fPEPfi151RERkWUSCAAnysuKMDw0BM2jQFc8cBgxDA0NIcWf
+      Dp/HlbwqiYgo6RIIgBgmh/vx7a9+ZeqibqYB3QS+9KVT+OAnn8WuDe9yOigRES0ICQSAB5//
+      X/+QvEqIiMhWcQVAV9MbaJ7MQe+hn6EnOHNxqap1O/HrH9mZtOKIiMg6cQVA/vIN2G44YS7/
+      XajGzNU63b7UpBVGRETWiisABi6dQEuoCB/cXpvseoiIyCZxBUAkMIK+6x6Ew7de+kFRHHC5
+      +GMwIqLFIM6DwCZe+r/fwOGfp9zy7KoHnsLnP/PhJJRFRERWizMAJDz1G5/HMx/Y8I6nec13
+      IqLFIq4AyCxZjlW52bfcqIWIiBaXuAIgr3IN8pJdCRER2Wph3JeMiIhsl9DVQFubDmL/sTPQ
+      bvwWYEnNRjy5c2NSCiMiImsldDXQ73/3h3jsE8/A65g6+JuZX5CksoiIyGoJBIAbFSuqsWnL
+      VqS5eTCYiGixSSAAIug524Bnf+d34fdMBUDNlsfx7NOPJak0IiKyUkJbAH/6jR9An7kUEJxu
+      b+IVERGRLRIIAAkXG9/Acy/tw2TUgFMysHLHR/DZpx9NXnVERGSZhG4I8x8vH8SnP/4kdjeP
+      4vFVXlxUeRCYiGixSOB3ABIcbh9KioswGRxDbnExWk+1JK8yIiKyVAIB4MRDD2yBlFOBKs8w
+      vvi1H2HTji3Jq4yIiCyV0A/Bdj7xFADg07//l/h0MqohIiLbxBUAHUf/Cw3BPHTv/TGuTszc
+      EnLFlsfw7Cd4GigR0WIQVwCUrX8YxaYMc9sqGObMeaCKgzeDISJaLOIIAANHXn8RJy713Tal
+      tG4znnqYxwGIiBaDOAJAQs3arShYHsI//9P38WvP/Hd4HBJ6zh9BVyT5BRIRkTXiCoCcwiXI
+      QQx6TMOSsmXI8DqQ4RjHwf84C+DdtwBCY/1oaL4EpwIUVa5CWWEm3r6HmKmraD7ZgJjpRCwW
+      Q+2aDchOdcf1poiIaHYJnAXkwq7NlfjDP/wjVC7JQ+fFC3jiM3/27rObOt46dBybH/4A0lwG
+      fvHybhQ99jjcylQEjPecx3U5HzvXV0IL9OAXR0/hyV2b4y+PiIjeU0Knge76+O9hw84etF3p
+      R9lv/x5yM1LfdV5DjSCipNy4cqiCDK+CQCSG3JSpb/me9BxMXmhHTFuG3q4e5OZP3XPMMAwY
+      hjHdTiwWg6qqc65RVWPxvTmhmAiHw5YuQdP02WcSnKqqlvfD3YwdUZmm9eNB1zVL25+rhAIg
+      MNyNn73wUwyrfjyuhNHhLcPm2iV3ntk0IMkzN413STJixswZRA53KtKdKhpPNEANhVBam3nH
+      Zlwu113di9jp5JlJs5Pg8XgsXYKD94+eldPptL4fOB5mJUnWjwdFSWjVmzQJ/BLYwD9+/Wso
+      XXc/gr0d8KanYP+bh991bsnpBmIxvP1dPhCLId0188fYeaYR2cs3YNvmzdjx4CY0HT4KA4As
+      y3A4HNP/gKkOmus/QLqtFrrd3Xym8fxjN8yN1f3Abpgby8fDApFAAGgIxhSsu68WHoeMaDgE
+      VX/3zXxJdmJ1RQ6OnjyH9tYWODJLkeJS0Ha2GcMTERSWVaK7tRlXe3pwrukUCiqq+MdKRGSh
+      hA4CP7x9Jf78j/8E1652o/t7QXzqs3/yHvNLWFq7HhmjwwhrMu6vzoIkAQVLyuDyOOH2l+Kh
+      7TkYuT6Owsp61KWnMgCIiCyU0I6oHR9+BvX3D2BgJID84qXISH3v/WaSJCE9KxfpNz3nT8+Y
+      /r/bm4qi4nc/kExERMkTVwAMXDqBH/7szdueL1+9Hb/62PaEiyIiIuvFFQATQ11481Aj3v/+
+      h7FhTR1cytShhIy8dzkDiIiIFpy4DgJXbPkwnv/B17G8MAX7Xn8N+w4dRTAmobAgJ9n1ERGR
+      ReLaApBkGdmFZXjyo2X4wIciOHPyKP7Pd7+OAy2/jK987mPJrpGIiCwQVwBo0Um0XTiHA4cO
+      ofNqPwqWVuITn/ufWFldkez6iIjIInHtArpy4jU8+4WvYFz3YOsDD2JldTmCw71ou9Kb7PqI
+      iMgicW0BZJeuwmc+/XEAQGRyApHJqeddGUVJK4yIiKwVVwBklizHxz62PNm1EBGRjRK4FAQR
+      ES1mDAAiIkExAIiIBMUAICISFAOAiEhQDAAiIkExAIiIBMUAICISFAOAiEhQDAAiIkExAIiI
+      BMUAICISFAOAiEhQDAAiIkExAIiIBMUAICISFAOAiEhQDAAiIkExAIiIBMUAICISFAOAiEhQ
+      DAAiIkE57FzYYNd5NF0ahN9twp1dhnV15ZDenmiaaG1pwGBQh8shYWnVahRlp9hZHhGRUOwL
+      AENFQ3Mn3v/E43BKwOuvvIzw8lL4nFMbIZHxXnRel/DoQ1tnQoGIiCxjWwAYahSmywunPLV6
+      T/c4MR6Nwef0AABGertgSE6cOtEI1ZCxYuUqpPtc0HUduq5Pt6NpGmKx2JyXq97FvOIyEQqF
+      LF2CpmmWtn8vUFXV8n6Iqaql7d8LTNP68aDrC2M82LoL6GYmAOmm7/q6biA1Iwf19eWIBvrx
+      5sEjeOKRByHLMiRpZj5ZluFwzL1sp8uVzLLvURJ8Pp+lS7ibPhOV0+m0vB9cTqel7d8LJMn6
+      8aAoC2M82HYQWHZ5oKhhRHUTMA2MR1Sku2f+GHOKShAeH4MiS/CmZUNSw1MhIUmQZXn6HxER
+      JYd9MSQ5sGV9DQ4eOASfU0dB5X3wOGWcOrIf+TUbUZhdiiX+Prx15BjMWAgr1mzkKUpERBay
+      dTsks6gCu4oqbnluzdYHp/+/ct02O8shIhIav2QTEQmKAUBEJCgGABGRoBgARESCYgAQEQmK
+      AUBEJCgGABGRoBgARESCYgAQEQmKAUBEJCgGABGRoBgARESCYgAQEQmKAUBEJCgGABGRoBgA
+      RESCYgAQEQmKAUBEJCgGABGRoBgARESCYgAQEQmKAUBEJCgGABGRoBgARESCYgAQEQmKAUBE
+      JCgGABGRoBgARESCYgAQEQmKAUBEJChbA0CNTOBkw3EcP96IkYnIHeeJjvfj1T2HENMMO0sj
+      IhKOfQFgGjh+8AAKqlZhbX01jh48CNUwb53F1NHYdB7q5HVw/U9EZC2HXQsytQhGVDe2Z/oA
+      AOkuDYGIimyf6+05MNBxGr7iGoTbT8y8zjRhmjNBoWkadF2f83I1TUtK/fe6aDRqafu6zkSf
+      ja5plveDdhdjR1Smaf14MIyF0Q+2BYCh65AVZfqxV1YQuWmloEWDONk2gkcfWYM97Te9zjBu
+      WeHLsgzlpnZmo8g8zDEXDoe1fwqyJFna/r1AlmXr+4HjYVYSrB8PkrQw+sG2AJCdTpiaChNT
+      H3BQ05By04d8/vg+hIxUnGhswNWeXvjPXcC61XVwKsotK3xN0+4qACT+wc/J3Xym8ZBkBsBs
+      pLv8chMPBvEcSDaMhwXSD7YFgKS4UZ6l4OyVQZSnxTAppcPvcWCgpwu+nCKsfuCDWH1j3vHh
+      Aayuq4HT2j4gIhKajV+PJazc8hDS1GG0903i4Z1boUiAruswbz0WjLr6++BSFkZCEhHdq2zb
+      AgCm9nuVVtWi9KbnikqX3TZfUfES+4oiIhIUd5ATEQmKAUBEJCgGABGRoBgARESCYgAQEQmK
+      AUBEJCgGABGRoBgARESCYgAQEQmKAUBEJCgGABGRoBgARESCYgAQEQmKAUBEJCgGABGRoBgA
+      RESCYgAQEQmKAUBEJCgGABGRoBgARESCYgAQEQmKAUBEJCgGABGRoBgARESCYgAQEQmKAUBE
+      JCgGABGRoBgARESCYgAQEQmKAUBEJCiHnQsLjvSi8XQ7XA4gv7wOFSU5kG5MM7QIWk41I2pI
+      iIVDWLZyPUpy/HaWR0QkFPu2AEwdh4+cxPpt92Pb9m24dOoYYpo5PdmIRVFSXY/NmzZh+5aV
+      OHG82bbSiIhEZNsWgKGGEXX44HfJAGRkeBWMR2LIS3VPFeJLRy4A0zRw+ngjcpfWTr3OMGAY
+      xnQ7sVgMsVhszstV72JecZkIhUKWLkHTNEvbvxeoqmp5P8RU1dL27wWmaf140PWFMR7s2wVk
+      mpAkafqhU5KgmuYts6ihMex+7XUU1m7G1uqld2zG5XLB4Zh72U6XK756hSLB5/NZuoS76TNR
+      OZ1Oy/vB5XRa2v69QJKsHw+KsjDGg21VSE43EItCB6AAGI+pqHHN/DEaaggvvvgL7Hj8I8hN
+      c+PtrJBlGbI8s6eK3ySJiJLDvgCQnVhTXYDDx1uQ61PhzlmGFJeCiy0nkFW+EsrwBWj+Ykxe
+      v4bJ64A7JR1FeVl2lUdEJBwbt0MkFC9fg4yJcUR1CdUZaZAkYElFNRweF+TiWvySPzhTmJu7
+      boiIrGTrjihJkpCaloHUm57zpd441dPhRW6u185yiIiExh+CEREJigFARCQoBgARkaAYAERE
+      gmIAEBEJigFARCQoBgARkaAYAEREgmIAEBEJigFARCQoBgARkaAYAEREgmIAEBEJigFARCQo
+      BgARkaAYAEREgmIAEBEJigFARCQoBgARkaAYAEREgmIAEBEJigFARCQoBgARkaBsDQDTNNDd
+      0YozF9qhGeZt09VIAM1NTegbHsftU4mIKJlsDAATZ4/uxQjSUZrjxOt7j+LmDNBjQbzy6n5U
+      1q5E3/mjaO8bt680IiIB2RYAph5F54iG+opCpOWWwqtfx0REm54+evUisqvWINXjwtr1a9B6
+      9oJdpRERCcm2ADBUFbLTBenGY7/DiaA2EwBj4wFkpKdNFeXzwwgH7CqNiEhItgWArCiAYUw/
+      Dhs6PMrM4n1eD8KRKADAVCOAw2NXaUREQrItACSHBxlKBP2BCPTYJMajMtI8TkQjEWi6gZyl
+      y9Df0QrdMNHTdgkFyyrsKo2ISEgO25Ykydjy4A40tzTjiiFh0wM74JQlnDvXjJzKeuSn52Fj
+      bQCNjQ1w+jKwvq7IttKIiERkXwAAcLj9WL9x8y3P1a2beZy/tAr5S+2siIhIXPwhGBGRoCTT
+      NBf0b650XYeu69OPDcOAJEnv8YpbqZqOmKrPPqPIJCDF47J0EVFVg6YZs88oMLWoNfMAAAgU
+      SURBVJdTgdOhWLoMjofZSZIEn8dp6TKiMQ2aPv/jYcEHgGmauLlEVVXhdrvnsSIyDAO6rsPp
+      tHaQ0HuLRqMcCwvAYh4Pth4DiIckSXf1jZ/sscC/NxDZarGOBx4DoLgwlIlmLNbxsOB3ARER
+      kTW4BUBEJCgGQLxME32drTjW0ICjR4/icu9QXM3Erl/FvsbWJBcnhpHuVrzw4m5EtLc3Yk2c
+      Ob4Pe462xHU5cUObwJt7jySzxHuaEQuhuakRR97ah1de24OGhkYMXA8m3nBsDK/va0i8nXuO
+      iRONJ6avotx44DV0XBsFAOiTAzjV2j1rC/tefwOxmx4zAOKkxUZx4vw1bNywAZs2bkBuRsp8
+      lySc0PgQDDWCzv4xAIChhnF5YBKT16/F3yh3iM6Z7PLhvrUbsGrFErhTC7Bx4wbkZ6Ump3H2
+      wx1IGLzWg5huwNSCGBwL4+qVLgBAX/sFwJs2exPv2OO/4M8CWrAkBZHJUUxGVKR6XUhNcQDR
+      cRxouowdW+6DoV/Hnr3t2LWjEs///AAqlpUgHBxDZukq1JXn4UzjEUwYDsiRMaieUuixMJpP
+      nYIOGSPXg9ixaydO7nsFNVt3ISfFhZbDbyKzZhuWZnnn+50vKOXVK9Dd1oaako0Y7etAVkkV
+      RvsvAwA6zp1E33gMkhpFfkUdKgrS8NKLL2JJ6TJEQwG4cyuxvmYJWk+fwHBQh8uhIawrAGI4
+      dbwJMUgIBAJYu+UBXDmxF7n1D2FpphsXTx6EVFiP5UXp8/vmF6hDBw5i644HoCCM3bsb8P6H
+      78fF0ycwNGkgFprEyo3bkKqP4sjJC/D7U+BNz8Oq6jJ0nDuBa+MaPEoMIdUJGBrOtZxCUDUR
+      HB1Bzab3Yej8YfgrNmJZvh9dZ45g3F+N1WXZ8/2WbbMk04u+8Riyo33IXrYSwYEeGDDR0TuB
+      dSvTEQkM4ujJ8/C4HZC82di0pgYj3W04c7kfKV4PBsdCAIDdL/47MkuWcQsgXg5nGh75pS04
+      3XgE+w+8haHxEGCaiMTe3sAyEInEANOAKzUb69ZvwMb192GovxeRoQ5c0zKxddNmrFtdC6ci
+      QXZ6sHLVapSVlSPfE8TloShqly/FyZZLMNRJdA5GUZzJlf87Kb4ceLURBGMG2jp6sWL5kqkJ
+      6jjOd01g25bN2Hb/VrSdboJhmpDcfqzbsAHbHtiAke5ehMevoWtMwrZtW7B+3X3wKgDgRF39
+      apSXl6Ekw4mOnhHUrq5FU8NJmKaOS1eHsSTPP39veoGLRiLTX+AjkSjUyDja+sPYtnUzHtha
+      h8aG0wgM90Hy56N+zVqsqi4DYtdxvjuC7Vs3Y8PaevicDkBSUF23CsvKylC9NAtnL3WjumY5
+      Tp9qgWloONM+gMqSrPl8q7YrX7YEVy73oO/aEIqLi5Hl0jAyGUNI9sCvAM0nm7Bi7WZs2boN
+      5kgnhiciONbShvu3b8fGDRuQl+EDAGimE/Xr1jEA4iZJSMsuxLYHHsS2DXU4fOAQ3u13fbIs
+      Y+osMQmQgNDEGFIzMnHzmWPBoS4cONaMyXAYhjn145LspTXQBi+hs70V2aXVUBbnmWYWk1Be
+      koOOzsuYkNKQ6b7xJ62GYLp8N35H4oADBgwAsqxM3ZNCkiABiIYn4PWl4+aPNhrox56DDQhO
+      hqZuXWqY8GQugSfUh77uS3DkVMLr4NCZK10LY2ygH40NDWg624WcbD/yK+pRlevCmVMNOHC8
+      GWYkANmXccvplGo0gD17D2I8OAldN2AYJjyZJcgwh9FxuQNyRgl8DrEGRWphGcKDXRgeDyM3
+      3YuS4lxcbr8El29qKygUnEDbuWY0NDRCdaZC0mKA4oRDvvVzkmQZkiQxAOKlhUfR1HwBwVAY
+      YyOD8KZlQlIciAXHEZycRMfFNkTf5bUZRRUYvNSCwGQI3d1XoeomIhPjcPizkZvpx/j4jZvh
+      SA7UV5fg5T1NqF1RZtdbW3SKyqtw7uh+5C1ZNvOkLw9+bRB9w+O4dqUVSkbhHfd3+rOKMN7f
+      hpHxIPqudiGiA2ooANOTjrycTEwEAjABSJKMLRtX4LmfvIn6+mq73tqiZGoRBCYm0d3ZjvFw
+      DG5vDvJzU1FWVYMVleXIykzD2FA/4M1AbW0dAiODkPxFMEfaMTwexLXeboRUDboaQgxuFOXn
+      YCLw9i1iJaypr8Ur/7UbK+pq5/V9zgvZB48+hFE9BR5FQkZBCS41HED2kjIAQFVlORRfFlau
+      rENJUT48Xi/S5CguXxvB6FAfRgLhW5rj7wDiZZoIjg3hck8/vGk5WLa0ELIkITDSj6vXrqOk
+      bAkikyoKclPRPxxEQV4WDC2G64EQcrIyEJ64jo4rvcgrLILscCM73Ye+rk4EohJK8tNhejKR
+      5lGgTfTjpbcu4qlHd0Cs7zqzCwdGEFX8yEhxoa/7CrIKS+GWDQwOjSAvPw+mHkNneztMlx/L
+      ykogmwYGhkZQkJ8HQMPQYAC5eVmIhgJo7+xCVkExHAByczIx0HMFwxMalhTnwpDcyPB7ATOK
+      n/70VXz4l5+Eskh/+GMFLTaJsaCBnKyp3WKR4Bjar/Qgt6gEZkxFQUEuDC2CtkvtMBxeVCwr
+      h1M20dPVibFJFWUVlfB7XVAjE7jUfgWZuQVwKA7k5WTg+kAv+oYnUFZajJAqIy8zFaYWxM9e
+      OoAPPfW4kFvFo4M9iDrSUZDlBwwdVzo7UFC2HJ4b33BG+rvRNzSOvOKlyM9Kg2lo6Lh0EZI3
+      E2leJ7LzcjHU34/cggL8f2Oyd2ESf0JJAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='384' name='Tip Amount Distribution by Payment Method' width='384'>
+      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
+      NYq6m3owuaTWplo5hbRu3nmszo5W7fZTrsXMmu7eva/ZREKJ+ZTqGpsVDliaGRvRw6eTSq1u
+      qa2lUU5mRQ8mF9XaVCenuKWbQ4/U2dm2+3uz68/3zqVU29SssO3o2uUBzS1sf30VrlLMymh4
+      PKm2pnq5pYyu33qgzs7237nX6COAkeufK9rZp/7z5zR667LSBUdri/NK54oq5TY0cOupDuxp
+      2uVVnsbiSZ07d079/f061rdPtqREPC5X0nryqabXA6qN+P8LKhPD13Tp9lPNJWb0xU8S3Ls+
+      oLq9R9V/9pTuXxtQ3pWW5hLKOK4KW8u68SCurrZ6X/ZOjlzXpzdGNZeY3tmbmk2o4/Ax9ff3
+      69y54wpLWp6bU6bkqphZ0fX70+pq3/29TqmgdNHWmbNndb7/jO4ODqhYymrg6j2dONuv4wfb
+      9PmVm5Kk2We3jbmxe1pVtSrD/tw2MqspRVv26dy5czrWU68rt0ZUyqaVVkT9/f3q7+9Xe2O1
+      3HxaidSK5Lm6feWymvb07PqdqSQpUKGjx0/q3Llz6m2P6urQY22tzOhBfEvn+/vV6C5oaHxJ
+      bmFLswvLkufqzpUBNXT6s9eywzrybO/hzkpdvfVQTiGr9VJo5+vb2Vwrt5BRIvls7+CAGjr3
+      fuNegwNQ0tRSQb0ddbLtoHqaIppdyUmSPM/VzcFBnXr/Q1UEdvl/tecqvbWlVCKhhaVVuV/6
+      IS0nv6mB2xO6+MFp2a/Bj6h1HTmjv/vTi4qEvtjiKrlaVHdLjexgRN31lmZXi9tv8hxdG7yh
+      cx+8v/tf02f2HD6tv/fzHykaev75l1ZXlFtf1VxyQcXSl365ynN0bfC6zr73viI+PJoOhCp0
+      YP9+BQO2NpfnlA9ElV9dULixU7FQQNH6NhU2l3YuX9hc1L3JdV041efPnamkysYOdbXUyZan
+      2XhcVdXVymZWlN3KazaR0MZWTl/+mcO58WEVavdpf1utL3tDFVFFK8IqFXKajifV0tKo+elp
+      dR/slW1b6jl6RInRJzuXT06OKFvdo4Mddb7sDVZEFfvK3ibls6vKpHOanU1oPZ39ytd3YeqR
+      0tEuHer85gcwBgfAlStbX9wXRaMh5bJFyS3q4d0bmt0KqrNhd0/9bLP1gx98INu2tJqc1G8u
+      3ZDrScXsmq4PfKZo637f7kC/LhQKf+3OpqSSAgrufE0rlM3lJRU1fPOKFouVaqmJ7P7QZ0Kh
+      sL7ezbfOvKvmmpDy6VX98uO/Uc6RpKIe3BzUQj6m1jofTlU947mORu8O6tNbE/rxj34gp5hX
+      KLT99bMsS198t2fWFzVw6XM19/Qq7PNto5TP6NKv/1opr0nvHNunWN0e9Z88JHmOHlz7RI/i
+      K5Kk5MyYrtx+pN5D+3wLliQtxMc0eGVA0ytFdbU1KFcoKFKx/SdBrFBUKmUlSan4uC7fHFHv
+      of2+7k3FxzV45bIml3Lqbm9QRXWb3jlzRJZcPbx5SQ+mFrcvl5jQ5RvD6j184Fv3GhyAoCK2
+      o5y7/U20tp5XbW2FZIf01ql3dLonpuvDE7u+ypNU39Sqjo5O9b19WvbWnNJFKRSt04WLf6Lg
+      8mPFl7d2fdeLCSkaKCnneJI8ra1nVV8TkxTSsf4f6GiLpzujs3qdfvGksqZeHR2d2newT/vq
+      SoqvFCSF9Hb/+zrWZmvocdyXvZ7n6s7lX2m+VK+//dOLqo6EFK2sUTazsf12x5Hs7VM9sdpm
+      XfzJz7U6dlupjZwPa7e5Tl5/9f/+j/Yce08fnDumoG3JDlaovaNDe/Z068IHZzV6/5Ekqa37
+      oH724x/o+uXLKrr+3SJauw7qw4s/1o8vHNbA4JDqaqq1tpGWJDnpVdlV24+eW7oO6Gd//EPd
+      uHxZBce/vS1dB/ThxT/SH793VAODQ7IDYbV3dKhzT5feef+MxkYeb1+uc79++pOPdHNg4Fv3
+      GhwAW8f6OnX99mNtbSwpnra1p/b5o9P9b59XaW5YEwsb2s1flfPcvG5dv6GNTE6LiXEVQs2q
+      fPY3yiw7qA8uXtTNT36ldMHZvVG/kyenVFSxVJTruCoWC3Jc6dDeVt0dGdfmSlLzxSq1Vz+/
+      ifWdflfrE7cVX0r7tLe085dgt/duP6GeXF7X1vqSJpY9dTaEn13eUu+pC0pP3dHM4uaury1l
+      1zS+JL17/IBKxaKKxZJCNS2qKiwqvriumSf31dTVu3N5K1ihDz44r8HPPlWu5M8d1NLYHUX3
+      nVdXY6WKxYJKjqOVuQkNP5lSPp/T/Rt3te/o882x+g6dOVinz64N7+r32BcWE5OaTKRUKBSU
+      Si6qtr5erfsOa+HJPW1msrp+7Z5OnDy6c/loXZvO9jbq06v3fNm7lJjU5GxK+UJBiwsp1dTX
+      aT05pXuPJ5XP5/Xg1j31HD74fG9tq84fadEnV+58416zfxPY87ScjGt2aUt9Rw6rImhrfTml
+      YFWDKiuCcosZxRc21d3Z+lunDl6lQnZTT55OKBCtVe+BHgVsS8n5ObW0d8iWtLmyoJxdrea6
+      Xf7JlK/wFB8f1dJGduc1e/b3qbk2otTslBY2Cjrce0jhoK3VhaSiTS2KBGwVc5taWM1rT/vu
+      P7k+O/FEi+uZ53v3HVZjVVAT40+VKdo62NurWDig1dSCIg1NigYDKubTSi5n1dXRvKtrnWJG
+      Dx+MqvTs5WCkSkcOH5LtFTXxdFRWrEn7u7d/EiU5N6+WjnbZklZTc7IqG1VXWbGreyVpczmp
+      sZn5nZdrmzu0v7NFS8m4ZhdW1Lpnn9oaa+UVM0ptFNXWVCt5ruLTcbX39OycOtwtnudobnpS
+      i6tp1bV0qKejRZYlFbIbGn0yqZbuA2qpr5JXyCi1UVBbU93O3raeHoV2+1yQ5yoxM7G9t6ld
+      3Z2tsuVpZSGhmeSSWjr3qr2pTl4xq9RGTm1N9ZLnanZ6Rq09e3/nXrMDAAAGM/gUEACYjQAA
+      gKEIAAAYigAAgKEIAAAYigAAgKEIAAAYigAAgKEIAAAYKuj3AADAy/N//+d/1Od3JpVaXFZj
+      S4v2nfhQf/90g375JK9/9g//6CuX5U9BAMCbZiulf/qn/1r/9r/8N7VEpI3kuIaTJb33dpc+
+      +eSaamuDmpzf5BQQALzpVmZG9PHAXamU1v/+sz/T9JqjYHqSU0AAYJJoXasufvSRqkqnOAIA
+      ABPlMyscAQCASbZWZ/Wf/sO/Vyo+xZPAAPDGcR2trW+quq5OAUsqFbLKFDzVBNP603/+7/Qv
+      /82/Um0kzBEAALxx7IDq6ut2XgyGo6oJS8pn1dLWqoaGRtWE+DFQADAWTwIDgKEIAAAY6v8D
+      jtahK2QznoAAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
