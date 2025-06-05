@@ -10,14 +10,6 @@ tlc_hd.ipynb
 ## Tableau Link or File
 https://public.tableau.com/views/tlc_hd_tableau/NYCTLCTaxiTripDataAnalysisTippingBehaviorJanuary2023?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 
-or
-
-tlc_hd_tableau.twbx
-
 ## Presentation Link or File
 
-TLC HD Ppt.pdf
-
-or
-
-TLC HD Ppt.pptx
+https://github.com/hansdarmawann/nyc-tlc-tipping/blob/main/TLC%20HD%20Ppt.pdf
