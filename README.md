@@ -1,5 +1,5 @@
 # NYC TLC Taxi Trip Data Analysis: Tipping Behavior
-by Hans Darmawan - JCDS2602
+by Hans Darmawan
 
 ## Abstract
 This study focuses on TLC taxi trip datasets and their impact on New York City passenger taxi tipping behavior. To fill the relevant literature gaps, this study explores the impact of trip and payment methods as well as service times on tipping habits. Important insights emerged from the EDA performed on the cleaned TLC dataset, which underwent multiple tidy processes. The insights also suggest that tips tend to be larger with credit card payments, revealing that recommendations vary non-uniformly with durations and times of trips. Suggestions aimed at improving drivers' income highlight the marketing of cashless payments combined with servicing peak times and high tip areas. Like many taxi service providers, this analysis seeks to optimize operational processes and improve customer satisfaction.
@@ -15,9 +15,6 @@ or
 tlc_hd_tableau.twbx
 
 ## Presentation Link or File
-https://www.canva.com/design/DAGkJsX6dCY/ry__J4HuK-gc5oFCC-bO4w/view?utm_content=DAGkJsX6dCY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h4a626bfe4a#1
-
-or
 
 TLC HD Ppt.pdf
 
